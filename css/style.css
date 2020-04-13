@@ -76,6 +76,14 @@ p {
   margin-top: 0;
   margin-bottom: 1rem; }
 
+.rotateimg90 {
+  -webkit-transform:rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
 abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
