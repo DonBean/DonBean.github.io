@@ -104,7 +104,7 @@
 	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
               <div class="text">
               	<p class="mb-4">
-	                <span style="font-size: 70px; display: block; text-align: center; margin-left: auto; margin-right: auto;" class="number" data-number="313">0</span>
+	                <span style="font-size: 70px; display: block; text-align: center; margin-left: auto; margin-right: auto;" class="number" id="MonthsAlive">0</span>
 	                <span>Months alive</span>
                 </p>
                 <!-- <p><a href="#" class="btn btn-primary py-3 px-3">Top of page</a></p> -->
@@ -651,6 +651,9 @@
   <script src="js/scrollax.min.js"></script>
   
   <script src="js/main.js"></script>
-    
+  <script> 
+	  document.getElementById("MonthsAlive").text = getMonthDifference(new Date('1996-11-12'), new Date()));
+	    </script>
+	    
   </body>
 </html>
