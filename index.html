@@ -7,12 +7,6 @@
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-	<style>
-		body {
-			background: black;
-		}
-	</style>
-
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
     
@@ -44,7 +38,6 @@
 	          <li class="nav-item"><a href="#projects-div" class="nav-link"><span>Projects</span></a></li> 
 	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
 	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#services-section" class="nav-link"><span>Copyright ©2022 Don Bean</span></a></li> -->
 	          <!-- <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li> -->
 	        </ul>
 	      </div>
@@ -127,7 +120,7 @@
 				<div id="war-map-div">
 					<h3>US War Map</h3>
 					<h5>A map of US military conflicts across the world</h5>
-					<p>In 246 years of existence, the United States has been in over 120 armed conflicts across the globe accounting for only 13 years of "peace" generously described. These are the countries that the United States has engaged in armed conflict with since 1776.</p>
+					<p>This comprehensive spreadsheet documents the history of war in the United States, including officially recognized conflicts, US Congress declared wars, and other military actions taken by the US government. From the Revolutionary War to the present day, this chart outlines the various conflicts and interventions in which the United States has been involved. This project is a work in progress, and will be updated as new information becomes available. It serves as a valuable resource for understanding the role of the United States in global conflicts and military actions throughout history.</p>
 					<p>See the <a target="_blank" href="https://docs.google.com/spreadsheets/d/1PX7e1n9DkhFOSApsXUx2lPsHfMGjhDuD1xnBt6Qwuas/edit?usp=sharing">accompanying spreadsheet</a> for more information</p>
 					<a target="_blank" href="images/us-war-map.png"><img src="images/us-war-map.png" style="
 					display: block;
@@ -141,11 +134,11 @@
 				</div>
 
 				<div id="supreme-court-div">
-					<h3>Supreme Court Lineage</h3>
+					<h3>13 Keys to Predicting the Next President</h3>
 					<h5>A document detailing the lineage and history of the US Supreme Court.</h5>
-					<!-- <p>These are some more words that Don can decide to use to further describe his work.</p> -->
-					<p>See the <a target="_blank" href="https://docs.google.com/spreadsheets/d/1OXpSG3li76VFuRB4hAfEbJ8bptbGwN6uUl312ICHYug/edit?usp=sharing">document</a> here</p>
-					<a target="_blank" href="https://docs.google.com/spreadsheets/d/1OXpSG3li76VFuRB4hAfEbJ8bptbGwN6uUl312ICHYug/edit?usp=sharing"><img src="images/supreme-court-lineage.png" style="
+					<p>The "13 Keys to the White House" is a system for predicting the outcome of U.S. presidential elections. Developed by Professor Allan Lichtman and Vladimir Keilis-Borok, the system consists of 13 true/false statements that are used to determine the likelihood of the incumbent party winning the election. The keys are based on various factors, including economic indicators, policy changes, social unrest, and foreign or military failures. Lichtman has been correctly predicting elections with this model since 1984.</p>
+					<p>See the <a target="_blank" href="https://docs.google.com/spreadsheets/d/1ugBh78y5OKpeLZ87-Bv3bRd5yj5uRtfjVJHSYPukHPQ/">document</a> here</p>
+					<a target="_blank" href="https://docs.google.com/spreadsheets/d/1OXpSG3li76VFuRB4hAfEbJ8bptbGwN6uUl312ICHYug/edit?usp=sharing"><img src="images/Keys_Screenshot.png" style="
 					display: block;
 					margin-bottom: 20px;
 					border: 20px solid black;
@@ -174,17 +167,18 @@
 	<!-- </div> -->
 
     <section class="ftco-section ftco-no-pb goto-here" id="resume-section">
-    	<div class="container">
+		<h3 style="text-align: center; padding-bottom: 24px;">See resume <a href="Don_Bean_Resume.pdf">here</a>.</h3>
+<!--     	<div class="container">
     		<div class="row">
     			<div class="col-md-3">
 				    <nav id="navi">
-					    <!-- <ul>
+					     <ul>
 					      <li><a href="#page-1">Education</a></li>
 					      <li><a href="#page-2">Experience</a></li>
 					      <li><a href="#page-3">Europe Trip Pictures<a/></li>
 					      <li><a href="#page-4">Contact</a></li>
 					    </ul>
-					  </nav> -->
+					  </nav>
 					</div>
 					<div class="col-md-9">
 					  <div id="page-1" class= "page one">
@@ -287,7 +281,7 @@
                 <li><a ><span class="icon-long-arrow-right mr-2"></span>Organized and executed lawn maintenance, trail cutting, painting, and minor building projects</a></li>
 							</ul> 
 		    				</div>
-						</div>
+						</div> -->
 
 			<!-- <div id="projects-div">
 				<div id="projects-header">
@@ -651,9 +645,35 @@
   <script src="js/scrollax.min.js"></script>
   
   <script src="js/main.js"></script>
-  <script> 
-	$("#MonthsAlive").innerText= getMonthDifference(new Date('1996-11-12'), new Date()));
-	    </script>
-	    
+  <p class="mb-4">
+	<span style="font-size: 70px; display: block; text-align: center; margin-left: auto; margin-right: auto;" class="number" id="MonthsAlive"></span>
+	<span>Months alive</span>
+  </p>
+  
+  <script>
+	// Set the date of birth
+	var birthDate = new Date(1996, 10, 12);  // November 12, 1996
+	// Get the current date
+	var currentDate = new Date();
+	// Calculate the number of months that have passed
+	var monthsAlive = (currentDate.getFullYear() - birthDate.getFullYear()) * 12;
+	monthsAlive += currentDate.getMonth() - birthDate.getMonth();
+	// Check if the current date is before the birthday in the current year
+	if (currentDate.getMonth() == birthDate.getMonth() && currentDate.getDate() < birthDate.getDate()) {
+	  monthsAlive--;
+	}
+	// Check if the birthday falls in a leap year and if the current date is after February 29th of that year
+	if (birthDate.getMonth() == 1 && birthDate.getDate() == 29 && !isLeapYear(currentDate.getFullYear()) && currentDate > birthDate) {
+	  monthsAlive--;
+	}
+	// Display the number of months alive
+	document.getElementById('MonthsAlive').innerHTML = monthsAlive;
+  
+	// Function to check if a year is a leap year
+	function isLeapYear(year) {
+	  return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
+	}
+  </script>
+  
   </body>
 </html>
